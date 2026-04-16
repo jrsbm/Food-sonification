@@ -5,6 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "librosa>=0.11.0",
     "marimo>=0.23.1",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.4",
     "polars>=1.39.3",
+    "soundfile>=0.13.1",
 ]
