@@ -1,0 +1,31 @@
+# Sonification workshop
+
+## Introduction to data sonification
+https://www.proquest.com/docview/2919330358?accountid=14507&pq-origsite=summon&sourcetype=Scholarly%20Journals
+Examples: hospital beep, alien radar
+Tiktok videos of animals moving https://www.instagram.com/reel/DUGohmrDUAD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+https://www.youtube.com/shorts/SJYTUq1ZmyY
+mushroom music
+
+1. Iconic sonification Mapping data to sound effects, associated with certain user driven event.
+2. Audification Playing data directly as a binary sound file.
+3. Musical sonification Mapping data to musical parameters, such as pitch register, tempo, and volume of individual instruments
+
+## Data analysis of spectroscopic data
+- Use of analytical methods for food authenticity
+- Data analysis in food authenticity
+- Chemometrics, machine learning
+## Sonifying spectroscopic data
+- Classification of coffee samples AM/FM
+https://link.springer.com/content/pdf/10.1007/s10772-020-09794-9.pdf
+
+## Sound design with spectroscopic data
+- Sine wave
+- Pads
+- Melody
+- Drums
+## Rhythm creation with spectroscopic data
+- Jungle break
+- Body percussion creation
+## Body percussion workshop
+- Two group polyrhythm
