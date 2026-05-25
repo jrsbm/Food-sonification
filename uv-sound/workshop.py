@@ -27,12 +27,12 @@ def _():
 
     <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 40px;">
     <div style="background: #E8F4F8; padding: 24px; border-radius: 8px; border-left: 4px solid #00CED1;">
-    <h3 style="margin: 0 0 12px 0; color: #0077BE; font-size: 1.15rem; font-weight: 700;">🔊 Basic Synthesis</h3>
-    <p style="margin: 0; color: #555; font-size: 0.95rem;">Sine waves, harmonics, sound foundations</p>
+    <h3 style="margin: 0 0 12px 0; color: #0077BE; font-size: 1.15rem; font-weight: 700;">🎯 Relevance</h3>
+    <p style="margin: 0; color: #555; font-size: 0.95rem;">Sonification uses, examples in food</p>
     </div>
     <div style="background: #F0E8F8; padding: 24px; border-radius: 8px; border-left: 4px solid #DA70D6;">
-    <h3 style="margin: 0 0 12px 0; color: #8B008B; font-size: 1.15rem; font-weight: 700;">🎛️ Modulation</h3>
-    <p style="margin: 0; color: #555; font-size: 0.95rem;">Frequency & amplitude control techniques</p>
+    <h3 style="margin: 0 0 12px 0; color: #8B008B; font-size: 1.15rem; font-weight: 700;">🔊 Sound synthesis</h3>
+    <p style="margin: 0; color: #555; font-size: 0.95rem;">Techniques for creating sounds</p>
     </div>
     <div style="background: #F8F0E8; padding: 24px; border-radius: 8px; border-left: 4px solid #FF8C00;">
     <h3 style="margin: 0 0 12px 0; color: #D2691E; font-size: 1.15rem; font-weight: 700;">☕ Data → Sound</h3>
@@ -40,6 +40,65 @@ def _():
     </div>
     </div>
     """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(sr):
+    # 1. Prepare the hidden image component inside an accordion wrapper
+    monitor_image_dropdown = mo.accordion({
+        "Visualise": mo.image(
+            src="heartmonitor.jpg", 
+            rounded=True, 
+            width="100%"
+        )
+    })
+
+    # 2. Stack the always-visible audio player directly on top of the dropdown
+    heart_rate_interface = mo.vstack([
+        mo.audio("heart_rate_monitor.mp3", rate=sr),
+        monitor_image_dropdown
+    ], gap=1.5)
+
+    # 3. Center the entire combined deck inside the notebook window
+    mo.center(heart_rate_interface)
+    return
+
+
+@app.cell(hide_code=True)
+def _():
+    # Video examples
+    mo.Html('''
+    <div style="display: flex; justify-content: center; width: 100%;">
+    <iframe 
+        width="360" 
+        height="640" 
+        src="https://www.youtube-nocookie.com/embed/SJYTUq1ZmyY" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+    <iframe 
+        src="https://youtube.com/embed/Z8gWvf6hVdM?si=Usb5y3bQyk1xcTiI" 
+        width="360" 
+        height="640" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+    </div>
+    ''')
+    return
+
+
+@app.cell(hide_code=True)
+def _():
+    mo.vstack([
+    mo.image("HseinKew.png"),
+    mo.image("Classification.png")
+        ])
     return
 
 
@@ -349,7 +408,7 @@ def _(
         mo.center(mo.audio(final_audio, sr)),
         fig
     ])
-    return
+    return (sr,)
 
 
 @app.cell(hide_code=True)
