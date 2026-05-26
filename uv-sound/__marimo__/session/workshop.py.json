@@ -32,77 +32,77 @@
       "console": []
     },
     {
-      "id": "ktXG",
+      "id": "MJUe",
       "code_hash": "2155d1aa50f19786455b57b43d91ae0b",
       "outputs": [],
       "console": []
     },
     {
-      "id": "ObXY",
-      "code_hash": "1c9ba57a4a2e6d46454007ba87866eb0",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "\n<div style=\"display: flex; justify-content: center; width: 100%;\">\n<iframe \n    width=\"360\" \n    height=\"640\" \n    src=\"https://www.youtube-nocookie.com/embed/SJYTUq1ZmyY\" \n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    referrerpolicy=\"strict-origin-when-cross-origin\"\n    allowfullscreen>\n</iframe>\n<iframe \n    src=\"https://youtube.com/embed/Z8gWvf6hVdM?si=Usb5y3bQyk1xcTiI\" \n    width=\"360\" \n    height=\"640\" \n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    referrerpolicy=\"strict-origin-when-cross-origin\"\n    allowfullscreen>\n</iframe>\n</div>\n"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "bhNx",
-      "code_hash": "0104106122a5885e3af8b9dcb215e895",
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "MJUe",
-      "code_hash": "cd517aee18f6173de565177cd716c95f",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 100%); padding: 36px 32px; border-radius: 12px; margin-bottom: 28px; border-top: 4px solid #00CED1;\">\n<h2 style=\"margin: 0 0 24px 0; font-size: 2rem; font-weight: 800; color: #0077BE;\">\ud83d\udd0a Sine Wave Synthesis</h2>\n<p style=\"margin: 0 0 24px 0; color: #333; font-size: 1.05rem;\">Adjust frequency and duration to explore pure tone synthesis:</span>\n</div></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "hgki",
-      "code_hash": "93416df00e31affebf74d0b21bf22683",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #FFFACD; padding: 16px 20px; border-radius: 8px; margin-bottom: 16px;'><strong style='color: #FF8C00; font-size: 1.1rem;'>Frequency: 640 Hz</strong></div></span><marimo-ui-element object-id='MJUe-0' random-id='1c46fc82-b775-7e0b-82ae-fa1c9b232d9f'><marimo-slider data-initial-value='440' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eFrequency (Hz)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='220' data-stop='880' data-step='20' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #FFE4E1; padding: 16px 20px; border-radius: 8px; margin-bottom: 16px;'><strong style='color: #DC143C; font-size: 1.1rem;'>Duration: 1.0s</strong></div></span><marimo-ui-element object-id='MJUe-1' random-id='f437580b-4dfa-6fc6-f385-261a223b968d'><marimo-slider data-initial-value='1.0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eDuration (s)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.5' data-stop='3.0' data-step='0.5' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
       "id": "vblA",
-      "code_hash": "aeeed5b03160516d2323afbf20627d5b",
-      "outputs": [],
+      "code_hash": "b52345dc8ad25ac9c65c3e5e84568a04",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'>\n<div style=\"display: flex; justify-content: center; width: 100%;\">\n<iframe \n    width=\"360\" \n    height=\"640\" \n    src=\"https://www.youtube-nocookie.com/embed/SJYTUq1ZmyY\" \n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    referrerpolicy=\"strict-origin-when-cross-origin\"\n    allowfullscreen>\n</iframe>\n<iframe \n    src=\"https://youtube.com/embed/Z8gWvf6hVdM?si=Usb5y3bQyk1xcTiI\" \n    width=\"360\" \n    height=\"640\" \n    frameborder=\"0\" \n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n    referrerpolicy=\"strict-origin-when-cross-origin\"\n    allowfullscreen>\n</iframe>\n</div>\n\n<div style=\"display: flex; justify-content: center; width: 100%;\">\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/jY8J5VM3Eno?si=vvqb3zJl7K2nEr2p\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</iframe>\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/EM1sxYbzoo8?si=DxTb2NI32uhYYVxf\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</div>\n\n<div style=\"display: flex; justify-content: center; width: 100%;\">\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/kDMJ1BX2Wno?si=IF7BFlpjUkHSnnaO\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</iframe>\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OLDWKpAkRHs?si=CUKJRdmQrqyHbOip\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</div>\n\n<div style=\"display: flex; justify-content: center; width: 100%;\">\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/kPUdhm2VE-o?si=TIXjUP2fEyrySnGb\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</iframe>\n</div>"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "bkHC",
-      "code_hash": "4002124b9bf06c9b5474e682ebcd6c18",
+      "code_hash": "8b01e5c41ed2e7a62440f2389310543b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "edc0dc7c65a7e85fd249bb6301854e20",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='67134b4e-3ef5-aa5a-379c-1ff910a3e98f'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Time(s)&#92;&quot;:0.0,&#92;&quot;Arabica_kHz&#92;&quot;:8.92,&#92;&quot;Robusta_kHz&#92;&quot;:8.99},{&#92;&quot;Time(s)&#92;&quot;:10.0,&#92;&quot;Arabica_kHz&#92;&quot;:8.97,&#92;&quot;Robusta_kHz&#92;&quot;:9.04},{&#92;&quot;Time(s)&#92;&quot;:20.0,&#92;&quot;Arabica_kHz&#92;&quot;:8.97,&#92;&quot;Robusta_kHz&#92;&quot;:9.02},{&#92;&quot;Time(s)&#92;&quot;:30.0,&#92;&quot;Arabica_kHz&#92;&quot;:8.94,&#92;&quot;Robusta_kHz&#92;&quot;:9.04},{&#92;&quot;Time(s)&#92;&quot;:33.0,&#92;&quot;Arabica_kHz&#92;&quot;:1.91,&#92;&quot;Robusta_kHz&#92;&quot;:1.59},{&#92;&quot;Time(s)&#92;&quot;:34.87,&#92;&quot;Arabica_kHz&#92;&quot;:2.3,&#92;&quot;Robusta_kHz&#92;&quot;:1.86},{&#92;&quot;Time(s)&#92;&quot;:36.85,&#92;&quot;Arabica_kHz&#92;&quot;:2.55,&#92;&quot;Robusta_kHz&#92;&quot;:2.13},{&#92;&quot;Time(s)&#92;&quot;:38.95,&#92;&quot;Arabica_kHz&#92;&quot;:2.7,&#92;&quot;Robusta_kHz&#92;&quot;:2.33},{&#92;&quot;Time(s)&#92;&quot;:41.16,&#92;&quot;Arabica_kHz&#92;&quot;:2.89,&#92;&quot;Robusta_kHz&#92;&quot;:2.38},{&#92;&quot;Time(s)&#92;&quot;:43.49,&#92;&quot;Arabica_kHz&#92;&quot;:3.06,&#92;&quot;Robusta_kHz&#92;&quot;:2.43}]&quot;' data-total-rows='50' data-size-bytes='2808' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Time(s)&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;Arabica_kHz&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;Robusta_kHz&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: linear-gradient(135deg, #F0E8F8 0%, #F0E8F8 100%); padding: 36px 32px; border-radius: 12px; margin-bottom: 28px; border-top: 4px solid #DA70D6;\">\n<h2 style=\"margin: 0 0 24px 0; font-size: 2rem; font-weight: 800; color: #8B008B;\">\ud83d\udd0a Digital Audio Synthesis</h2>\n<p style=\"margin: 0 0 24px 0; color: #333; font-size: 1.05rem;\">Adjust frequency and duration to explore pure tone synthesis:</span>\n</div></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "lEQa",
+      "id": "PKri",
+      "code_hash": "ef0fa5df7f1ddabf69394c8f4c383338",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 4rem'><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 1rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"base-carrier\">\ud83d\udcfb Base Carrier</h3></span><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #FFFACD; padding: 16px 20px; border-radius: 8px; margin-bottom: 16px;'><strong style='color: #FF8C00; font-size: 1.1rem;'>Frequency: 440 Hz</strong></div></span><marimo-ui-element object-id='lEQa-0' random-id='b99cc3c7-d7a5-9598-fee1-2ccf176fb124'><marimo-slider data-initial-value='440' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eFrequency (Hz)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='220' data-stop='880' data-step='20' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #FFE4E1; padding: 16px 20px; border-radius: 8px; margin-bottom: 16px;'><strong style='color: #DC143C; font-size: 1.1rem;'>Duration: 1.0s</strong></div></span><marimo-ui-element object-id='lEQa-1' random-id='40223499-e140-8f74-9900-14d20c73be1b'><marimo-slider data-initial-value='1.0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eDuration (s)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.5' data-stop='3.0' data-step='0.5' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 1rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"modulation-engine\">\ud83c\udf9b\ufe0f Modulation Engine</h3></span><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 1rem'><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #E6F9F3; padding: 12px 16px; border-radius: 8px; margin-bottom: 8px;'><strong style='color: #00A86B; font-size: 1rem;'>Modulator Rate: 0 Hz</strong></div></span><marimo-ui-element object-id='lEQa-2' random-id='1d6f1bec-f2af-bab3-1642-a41b8bdff23e'><marimo-slider data-initial-value='0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eModulator Freq (Hz)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='100' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #F3E6F9; padding: 12px 16px; border-radius: 8px; margin-bottom: 8px;'><strong style='color: #8A2BE2; font-size: 1rem;'>AM Depth (Tremolo): 0.0</strong></div></span><marimo-ui-element object-id='lEQa-3' random-id='efb18bff-3722-5b0c-7453-44a0d01d6645'><marimo-slider data-initial-value='0.0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eAM Depth (Index)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.0' data-stop='1.0' data-step='0.05' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #E6E6FA; padding: 12px 16px; border-radius: 8px; margin-bottom: 8px;'><strong style='color: #4B0082; font-size: 1rem;'>FM Depth (Vibrato/Timbre): 0.0</strong></div></span><marimo-ui-element object-id='lEQa-4' random-id='4b386b85-7295-4000-0a86-14121cf871a5'><marimo-slider data-initial-value='0.0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eFM Depth (Index)&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.0' data-stop='50.0' data-step='2.0' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div></div></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "c7d699bb1c04ec97d73f0bfb4e091e69",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "f3e2926a17adc6d7c70da8a3f0b579d8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
       "code_hash": "2b8efd9f52d34c2f25ace78637ec18b6",
       "outputs": [
         {
@@ -115,7 +115,7 @@
       "console": []
     },
     {
-      "id": "PKri",
+      "id": "RGSE",
       "code_hash": "9aaf490c3a554a8af7669f0d915b03b9",
       "outputs": [
         {
@@ -128,20 +128,7 @@
       "console": []
     },
     {
-      "id": "LQQK",
-      "code_hash": "c83174bec341081f57f9c3a7343e7bd3",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<div style='padding:0'><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: linear-gradient(135deg, #F8F0E8 0%, #FFF8F0 100%); padding: 36px 32px; border-radius: 12px; margin-bottom: 28px; border-top: 4px solid #FF8C00;\">\n<h2 style=\"margin: 0 0 8px 0; font-size: 2rem; font-weight: 800; color: #D2691E;\">\u2615 Coffee Sonification</h2>\n<p style=\"margin: 0; color: #8B4513; font-size: 1rem;\">Transform coffee spectra into sound through interactive synthesis controls</span>\n</div></span><span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: #FFF8DC; padding: 16px 20px; border-radius: 8px; margin-bottom: 20px; border-left: 3px solid #FF8C00;\">\n<strong style=\"color: #D2691E; font-size: 1rem;\">\ud83d\udcca Sample Selection:</strong>\n</div></span><marimo-ui-element object-id='PKri-0' random-id='4ffe66e8-364b-2936-6395-5ea8aa4b9774'><marimo-dropdown data-initial-value='[&quot;ID: 1 (Row 0)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCoffee Sample&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;ID: 1 (Row 0)&quot;,&quot;ID: 2 (Row 1)&quot;,&quot;ID: 3 (Row 2)&quot;,&quot;ID: 4 (Row 3)&quot;,&quot;ID: 5 (Row 4)&quot;,&quot;ID: 6 (Row 5)&quot;,&quot;ID: 7 (Row 6)&quot;,&quot;ID: 8 (Row 7)&quot;,&quot;ID: 9 (Row 8)&quot;,&quot;ID: 10 (Row 9)&quot;,&quot;ID: 11 (Row 10)&quot;,&quot;ID: 12 (Row 11)&quot;,&quot;ID: 13 (Row 12)&quot;,&quot;ID: 14 (Row 13)&quot;,&quot;ID: 15 (Row 14)&quot;,&quot;ID: 16 (Row 15)&quot;,&quot;ID: 17 (Row 16)&quot;,&quot;ID: 18 (Row 17)&quot;,&quot;ID: 19 (Row 18)&quot;,&quot;ID: 20 (Row 19)&quot;,&quot;ID: 21 (Row 20)&quot;,&quot;ID: 22 (Row 21)&quot;,&quot;ID: 23 (Row 22)&quot;,&quot;ID: 24 (Row 23)&quot;,&quot;ID: 25 (Row 24)&quot;,&quot;ID: 26 (Row 25)&quot;,&quot;ID: 27 (Row 26)&quot;,&quot;ID: 28 (Row 27)&quot;,&quot;ID: 29 (Row 28)&quot;,&quot;ID: 30 (Row 29)&quot;,&quot;ID: 31 (Row 30)&quot;,&quot;ID: 32 (Row 31)&quot;,&quot;ID: 33 (Row 32)&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: #FFE4E1; padding: 16px 20px; border-radius: 8px; margin: 24px 0 20px 0; border-left: 3px solid #DC143C;\">\n<strong style=\"color: #DC143C; font-size: 1rem;\">\ud83c\udf9b\ufe0f Synthesis Controls:</strong>\n</div></span><div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 3rem'><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #FFE4E1; padding: 8px 12px; border-radius: 4px; margin-bottom: 8px;'><span style='color: #DC143C; font-weight: 600;'>Pitch: 1.00x</span></div></span><marimo-ui-element object-id='PKri-1' random-id='2dd8f16d-a36a-3892-c8ed-90667d35d64d'><marimo-slider data-initial-value='1.0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003ePitch Shift&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.2' data-stop='4.0' data-step='0.01' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #FFDAB9; padding: 8px 12px; border-radius: 4px; margin-bottom: 8px;'><span style='color: #FF7F50; font-weight: 600;'>Smoothness: 15</span></div></span><marimo-ui-element object-id='PKri-2' random-id='7640884a-6bbf-2be7-1119-0061f5735e81'><marimo-slider data-initial-value='15' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eSmoothness&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='5' data-stop='51' data-step='2' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #FFD700; padding: 8px 12px; border-radius: 4px; margin-bottom: 8px;'><span style='color: #FF8C00; font-weight: 600;'>Volume: 0.8</span></div></span><marimo-ui-element object-id='PKri-3' random-id='7aaa14d5-872d-0225-b88f-9f657385470b'><marimo-slider data-initial-value='0.8' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eMaster Volume&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='1.0' data-step='0.1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div></div><span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: #E8F4F8; padding: 16px 20px; border-radius: 8px; margin: 24px 0 20px 0; border-left: 3px solid #00CED1;\">\n<strong style=\"color: #0077BE; font-size: 1rem;\">\ud83d\udcc8 ADSR Envelope (Attack \u2022 Decay \u2022 Sustain \u2022 Release):</strong>\n</div></span><div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='PKri-4' random-id='2d00fbba-afa1-cfb5-78df-6b4102412460'><marimo-slider data-initial-value='0.1' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eA&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.01' data-stop='0.5' data-step='0.01' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='PKri-5' random-id='7ca7fb38-7566-7eea-a5dc-c48c2c06ae98'><marimo-slider data-initial-value='0.2' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eD&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.01' data-stop='0.5' data-step='0.01' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='PKri-6' random-id='99c49b3f-f740-bd88-26c1-d49c62d56db9'><marimo-slider data-initial-value='0.7' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eS&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.1' data-stop='1.0' data-step='0.1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='PKri-7' random-id='6692def2-7729-6eeb-d32c-2e9b851e9b6c'><marimo-slider data-initial-value='0.5' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eR&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.1' data-stop='1.0' data-step='0.1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div></div></div>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "Xref",
+      "id": "emfo",
       "code_hash": "c55ee397c7edf23f60b9057e58befcab",
       "outputs": [
         {
@@ -154,20 +141,26 @@
       "console": []
     },
     {
-      "id": "SFPL",
-      "code_hash": "a250c0b8fa628d20015bcce7cdce2b39",
-      "outputs": [],
-      "console": [
+      "id": "Kclp",
+      "code_hash": "c83174bec341081f57f9c3a7343e7bd3",
+      "outputs": [
         {
-          "type": "stream",
-          "name": "stderr",
-          "text": "C:\\Users\\Joris\\AppData\\Local\\Temp\\marimo_17220\\__marimo__cell_SFPL_.py:55: UserWarning: Glyph 128200 (\\N{CHART WITH UPWARDS TREND}) missing from font(s) DejaVu Sans.\n  plt.tight_layout()\nC:\\Users\\Joris\\AppData\\Local\\Temp\\marimo_17220\\__marimo__cell_SFPL_.py:55: UserWarning: Glyph 127932 (\\N{MUSICAL SCORE}) missing from font(s) DejaVu Sans.\n  plt.tight_layout()\nC:\\Users\\Joris\\Documents\\VSCode\\food-sonification\\uv-sound\\.venv\\Lib\\site-packages\\marimo\\_output\\mpl.py:87: UserWarning: Glyph 128200 (\\N{CHART WITH UPWARDS TREND}) missing from font(s) DejaVu Sans.\n  fig.figure.savefig(buf, format=\"png\", bbox_inches=\"tight\", dpi=dpi)  # type: ignore[attr-defined]\nC:\\Users\\Joris\\Documents\\VSCode\\food-sonification\\uv-sound\\.venv\\Lib\\site-packages\\marimo\\_output\\mpl.py:87: UserWarning: Glyph 127932 (\\N{MUSICAL SCORE}) missing from font(s) DejaVu Sans.\n  fig.figure.savefig(buf, format=\"png\", bbox_inches=\"tight\", dpi=dpi)  # type: ignore[attr-defined]\n",
-          "mimetype": "text/plain"
+          "type": "data",
+          "data": {
+            "text/html": "<div style='padding:0'><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: linear-gradient(135deg, #F8F0E8 0%, #FFF8F0 100%); padding: 36px 32px; border-radius: 12px; margin-bottom: 28px; border-top: 4px solid #FF8C00;\">\n<h2 style=\"margin: 0 0 8px 0; font-size: 2rem; font-weight: 800; color: #D2691E;\">\u2615 Coffee Sonification</h2>\n<p style=\"margin: 0; color: #8B4513; font-size: 1rem;\">Transform coffee spectra into sound through interactive synthesis controls</span>\n</div></span><span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: #FFF8DC; padding: 16px 20px; border-radius: 8px; margin-bottom: 20px; border-left: 3px solid #FF8C00;\">\n<strong style=\"color: #D2691E; font-size: 1rem;\">\ud83d\udcca Sample Selection:</strong>\n</div></span><marimo-ui-element object-id='RGSE-0' random-id='d629ab9a-d26f-fdd7-4707-81bf200a9dc8'><marimo-dropdown data-initial-value='[&quot;ID: 1 (Row 0)&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eCoffee Sample&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;ID: 1 (Row 0)&quot;,&quot;ID: 2 (Row 1)&quot;,&quot;ID: 3 (Row 2)&quot;,&quot;ID: 4 (Row 3)&quot;,&quot;ID: 5 (Row 4)&quot;,&quot;ID: 6 (Row 5)&quot;,&quot;ID: 7 (Row 6)&quot;,&quot;ID: 8 (Row 7)&quot;,&quot;ID: 9 (Row 8)&quot;,&quot;ID: 10 (Row 9)&quot;,&quot;ID: 11 (Row 10)&quot;,&quot;ID: 12 (Row 11)&quot;,&quot;ID: 13 (Row 12)&quot;,&quot;ID: 14 (Row 13)&quot;,&quot;ID: 15 (Row 14)&quot;,&quot;ID: 16 (Row 15)&quot;,&quot;ID: 17 (Row 16)&quot;,&quot;ID: 18 (Row 17)&quot;,&quot;ID: 19 (Row 18)&quot;,&quot;ID: 20 (Row 19)&quot;,&quot;ID: 21 (Row 20)&quot;,&quot;ID: 22 (Row 21)&quot;,&quot;ID: 23 (Row 22)&quot;,&quot;ID: 24 (Row 23)&quot;,&quot;ID: 25 (Row 24)&quot;,&quot;ID: 26 (Row 25)&quot;,&quot;ID: 27 (Row 26)&quot;,&quot;ID: 28 (Row 27)&quot;,&quot;ID: 29 (Row 28)&quot;,&quot;ID: 30 (Row 29)&quot;,&quot;ID: 31 (Row 30)&quot;,&quot;ID: 32 (Row 31)&quot;,&quot;ID: 33 (Row 32)&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: #FFE4E1; padding: 16px 20px; border-radius: 8px; margin: 24px 0 20px 0; border-left: 3px solid #DC143C;\">\n<strong style=\"color: #DC143C; font-size: 1rem;\">\ud83c\udf9b\ufe0f Synthesis Controls:</strong>\n</div></span><div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 3rem'><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #FFE4E1; padding: 8px 12px; border-radius: 4px; margin-bottom: 8px;'><span style='color: #DC143C; font-weight: 600;'>Pitch: 1.00x</span></div></span><marimo-ui-element object-id='RGSE-1' random-id='faa6a25c-e9c6-247e-7522-ff4189599c28'><marimo-slider data-initial-value='1.0' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003ePitch Shift&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.2' data-stop='4.0' data-step='0.01' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #FFDAB9; padding: 8px 12px; border-radius: 4px; margin-bottom: 8px;'><span style='color: #FF7F50; font-weight: 600;'>Smoothness: 15</span></div></span><marimo-ui-element object-id='RGSE-2' random-id='cea74999-c74c-1818-5810-5dae0d7dce1e'><marimo-slider data-initial-value='15' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eSmoothness&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='5' data-stop='51' data-step='2' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #FFD700; padding: 8px 12px; border-radius: 4px; margin-bottom: 8px;'><span style='color: #FF8C00; font-weight: 600;'>Volume: 0.8</span></div></span><marimo-ui-element object-id='RGSE-3' random-id='17000658-8231-4c97-427a-8d61d3423e64'><marimo-slider data-initial-value='0.8' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eMaster Volume&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='1.0' data-step='0.1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div></div><span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: #E8F4F8; padding: 16px 20px; border-radius: 8px; margin: 24px 0 20px 0; border-left: 3px solid #00CED1;\">\n<strong style=\"color: #0077BE; font-size: 1rem;\">\ud83d\udcc8 ADSR Envelope (Attack \u2022 Decay \u2022 Sustain \u2022 Release):</strong>\n</div></span><div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='RGSE-4' random-id='9e0cbb5c-a616-dbe9-9af1-f1e76dcbf47a'><marimo-slider data-initial-value='0.1' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eA&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.01' data-stop='0.5' data-step='0.01' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='RGSE-5' random-id='d9c86bbc-845f-35de-fccf-5ba313cc7ec7'><marimo-slider data-initial-value='0.2' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eD&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.01' data-stop='0.5' data-step='0.01' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='RGSE-6' random-id='7a11432a-633f-6bc1-aea0-a3478e6e72af'><marimo-slider data-initial-value='0.7' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eS&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.1' data-stop='1.0' data-step='0.1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='RGSE-7' random-id='b04d5574-511e-6780-e6f7-01c51e1f4b49'><marimo-slider data-initial-value='0.5' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eR&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.1' data-stop='1.0' data-step='0.1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div></div></div>"
+          }
         }
-      ]
+      ],
+      "console": []
     },
     {
-      "id": "BYtC",
+      "id": "Hstk",
+      "code_hash": "8d34c720975f7605ee10317bf8016496",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "nWHF",
       "code_hash": "58b544f6c10e7b3e8d95414bc0a4d726",
       "outputs": [
         {
@@ -180,20 +173,20 @@
       "console": []
     },
     {
-      "id": "Xvrp",
+      "id": "iLit",
       "code_hash": "3978706d95e41b27ed08a25a4a822ee0",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: linear-gradient(135deg, #F8E8F4 0%, #F0E8F8 100%); padding: 36px 32px; border-radius: 12px; margin-bottom: 28px; border-top: 4px solid #DA70D6;\">\n<h2 style=\"margin: 0 0 8px 0; font-size: 2rem; font-weight: 800; color: #8B008B;\">\ud83c\udf36\ufe0f Spice Spectra Analysis</h2>\n<p style=\"margin: 0; color: #556B2F; font-size: 1rem;\">Select spice samples to visualize their PTR-MS fingerprints</span>\n</div></span><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #F0E8F8; padding: 16px 20px; border-radius: 8px; margin-bottom: 16px;'><strong style='color: #8B008B; font-size: 1rem;'>\ud83d\udcca Plot Controls (3 selected):</strong></div></span><marimo-ui-element object-id='BYtC-0' random-id='9343bc0d-731a-c26f-e87a-b0a84cef028e'><marimo-multiselect data-initial-value='[&quot;Coriander&quot;,&quot;Cumin&quot;,&quot;Mace&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eChoose Spices to Plot:&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Coriander&quot;,&quot;Cumin&quot;,&quot;Mace&quot;,&quot;Cinnamon&quot;,&quot;Black pepper&quot;,&quot;White pepper&quot;,&quot;Saffron&quot;,&quot;Chili paprika&quot;,&quot;Nutmeg&quot;]' data-full-width='false' data-disabled='false'></marimo-multiselect></marimo-ui-element></div>"
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><div style=\"background: linear-gradient(135deg, #F8E8F4 0%, #F0E8F8 100%); padding: 36px 32px; border-radius: 12px; margin-bottom: 28px; border-top: 4px solid #DA70D6;\">\n<h2 style=\"margin: 0 0 8px 0; font-size: 2rem; font-weight: 800; color: #8B008B;\">\ud83c\udf36\ufe0f Spice Spectra Analysis</h2>\n<p style=\"margin: 0; color: #556B2F; font-size: 1rem;\">Select spice samples to visualize their PTR-MS fingerprints</span>\n</div></span><span class=\"markdown prose dark:prose-invert contents\"><div style='background: #F0E8F8; padding: 16px 20px; border-radius: 8px; margin-bottom: 16px;'><strong style='color: #8B008B; font-size: 1rem;'>\ud83d\udcca Plot Controls (3 selected):</strong></div></span><marimo-ui-element object-id='nWHF-0' random-id='83a86a44-ebab-d3b6-0620-878e0a4d5415'><marimo-multiselect data-initial-value='[&quot;Coriander&quot;,&quot;Cumin&quot;,&quot;Mace&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eChoose Spices to Plot:&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Coriander&quot;,&quot;Cumin&quot;,&quot;Mace&quot;,&quot;Cinnamon&quot;,&quot;Black pepper&quot;,&quot;White pepper&quot;,&quot;Saffron&quot;,&quot;Chili paprika&quot;,&quot;Nutmeg&quot;]' data-full-width='false' data-disabled='false'></marimo-multiselect></marimo-ui-element></div>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "RGSE",
+      "id": "ZHCJ",
       "code_hash": "8abf8cebf6dc4744c0adf2652f32bcc1",
       "outputs": [
         {
@@ -206,7 +199,7 @@
       "console": []
     },
     {
-      "id": "Kclp",
+      "id": "ROlb",
       "code_hash": "6f79872fb28e09cf947a0c6938306c09",
       "outputs": [
         {
@@ -219,13 +212,13 @@
       "console": []
     },
     {
-      "id": "emfo",
+      "id": "qnkX",
       "code_hash": "93c73759128adf79cd172b558217bc40",
       "outputs": [],
       "console": []
     },
     {
-      "id": "Hstk",
+      "id": "TqIu",
       "code_hash": "26e1d0053d994c085cc7b0dc5cc13521",
       "outputs": [
         {

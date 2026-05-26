@@ -68,6 +68,7 @@ def _(sr):
 @app.cell(hide_code=True)
 def _():
     # Video examples
+    mo.vstack([
     mo.Html('''
     <div style="display: flex; justify-content: center; width: 100%;">
     <iframe 
@@ -89,16 +90,54 @@ def _():
         allowfullscreen>
     </iframe>
     </div>
+    '''),
+    mo.Html('''
+    <div style="display: flex; justify-content: center; width: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jY8J5VM3Eno?si=vvqb3zJl7K2nEr2p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EM1sxYbzoo8?si=DxTb2NI32uhYYVxf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    '''),
+    mo.Html('''
+    <div style="display: flex; justify-content: center; width: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kDMJ1BX2Wno?si=IF7BFlpjUkHSnnaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OLDWKpAkRHs?si=CUKJRdmQrqyHbOip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    '''),
+    mo.Html('''
+    <div style="display: flex; justify-content: center; width: 100%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kPUdhm2VE-o?si=TIXjUP2fEyrySnGb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </iframe>
     ''')
+    ])
     return
 
 
 @app.cell(hide_code=True)
 def _():
+
+    # Section header with narrative context
+    header = mo.md("""
+    <div style="background: linear-gradient(135deg, #E8F9FB 0%, #F0F8FF 100%); padding: 40px 36px; border-radius: 12px; margin-bottom: 32px; border-top: 5px solid #00CED1;">
+    <h2 style="margin: 0 0 12px 0; font-size: 2rem; font-weight: 800; color: #0077BE;">Relevance</h2>
+    <p style="margin: 0; color: #333; font-size: 1.05rem; line-height: 1.6;">Data sonification for food authentication</p>
+    </div>
+    """)
+
+
     mo.vstack([
-    mo.image("HseinKew.png"),
-    mo.image("Classification.png")
-        ])
+        header, 
+        mo.image("HseinKew.png"),
+        mo.hstack([
+            mo.image(src="Classification.png", width=500, height=500),
+            mo.image("PCA.png", width=500, height=500)
+        ]),
+        mo.hstack([
+            mo.image("S_AM.png", width=500, height=300),
+            mo.image("S_FM.png", width=500, height=300)
+        ])], gap=2
+        )
     return
 
 
@@ -107,58 +146,133 @@ def _():
     freq_slider = mo.ui.slider(start=220, stop=880, step=20, value=440, label="Frequency (Hz)")
     duration_slider = mo.ui.slider(start=0.5, stop=3.0, step=0.5, value=1.0, label="Duration (s)")
 
+    mod_freq_slider = mo.ui.slider(start=0, stop=100, step=1, value=0, label="Modulator Freq (Hz)")
+    am_depth_slider = mo.ui.slider(start=0.0, stop=1.0, step=0.05, value=0.0, label="AM Depth (Index)")
+    fm_depth_slider = mo.ui.slider(start=0.0, stop=50.0, step=2.0, value=0.0, label="FM Depth (Index)")
+
     mo.md(f"""
-    <div style="background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 100%); padding: 36px 32px; border-radius: 12px; margin-bottom: 28px; border-top: 4px solid #00CED1;">
-    <h2 style="margin: 0 0 24px 0; font-size: 2rem; font-weight: 800; color: #0077BE;">🔊 Sine Wave Synthesis</h2>
+    <div style="background: linear-gradient(135deg, #F0E8F8 0%, #F0E8F8 100%); padding: 36px 32px; border-radius: 12px; margin-bottom: 28px; border-top: 4px solid #DA70D6;">
+    <h2 style="margin: 0 0 24px 0; font-size: 2rem; font-weight: 800; color: #8B008B;">🔊 Digital Audio Synthesis</h2>
     <p style="margin: 0 0 24px 0; color: #333; font-size: 1.05rem;">Adjust frequency and duration to explore pure tone synthesis:</p>
     </div>
     """)
-    return duration_slider, freq_slider
+    return (
+        am_depth_slider,
+        duration_slider,
+        fm_depth_slider,
+        freq_slider,
+        mod_freq_slider,
+    )
 
 
 @app.cell(hide_code=True)
-def _(duration_slider, freq_slider):
+def _(
+    am_depth_slider,
+    duration_slider,
+    fm_depth_slider,
+    freq_slider,
+    mod_freq_slider,
+):
     # Styled slider container
-    controls = mo.vstack([
+    carrier_controls = mo.vstack([
         mo.md(f"<div style='background: #FFFACD; padding: 16px 20px; border-radius: 8px; margin-bottom: 16px;'><strong style='color: #FF8C00; font-size: 1.1rem;'>Frequency: {freq_slider.value} Hz</strong></div>"),
         freq_slider,
         mo.md(f"<div style='background: #FFE4E1; padding: 16px 20px; border-radius: 8px; margin-bottom: 16px;'><strong style='color: #DC143C; font-size: 1.1rem;'>Duration: {duration_slider.value}s</strong></div>"),
         duration_slider
     ])
 
-    controls
+    modulator_controls = mo.vstack([
+        mo.md(f"<div style='background: #E6F9F3; padding: 12px 16px; border-radius: 8px; margin-bottom: 8px;'><strong style='color: #00A86B; font-size: 1rem;'>Modulator Rate: {mod_freq_slider.value} Hz</strong></div>"),
+        mod_freq_slider,
+        mo.md(f"<div style='background: #F3E6F9; padding: 12px 16px; border-radius: 8px; margin-bottom: 8px;'><strong style='color: #8A2BE2; font-size: 1rem;'>AM Depth (Tremolo): {am_depth_slider.value}</strong></div>"),
+        am_depth_slider,
+        mo.md(f"<div style='background: #E6E6FA; padding: 12px 16px; border-radius: 8px; margin-bottom: 8px;'><strong style='color: #4B0082; font-size: 1rem;'>FM Depth (Vibrato/Timbre): {fm_depth_slider.value}</strong></div>"),
+        fm_depth_slider
+    ], gap=1)
+
+    dashboard = mo.hstack([
+        mo.vstack([mo.md("### 📻 Base Carrier"), carrier_controls], gap=1),
+        mo.vstack([mo.md("### 🎛️ Modulation Engine"), modulator_controls], gap=1)
+    ], gap=4, justify="start")
+
+    dashboard
     return
 
 
 @app.cell(hide_code=True)
-def _(duration_slider, freq_slider):
+def _(
+    am_depth_slider,
+    duration_slider,
+    fm_depth_slider,
+    freq_slider,
+    mod_freq_slider,
+):
     # Audio setup
-    f = freq_slider.value
+    fc = freq_slider.value
     d = duration_slider.value
+    fm = mod_freq_slider.value
+    am_depth = am_depth_slider.value
+    fm_depth = fm_depth_slider.value
     sr_fm = 44100
 
-    # 1. Generate the raw sine wave array
+    # 1. Sample array timeline
     t = np.linspace(0, d, int(sr_fm * d), endpoint=False)
-    sine_wave = np.sin(2 * np.pi * f * t)
-
-    # 2. Plot using Librosa's specialized 'waveshow'
-    figfm, ax_fm = plt.subplots(figsize=(10, 3.5))
-
-    # We zoom into the first 25ms so you can see the actual cycles, 
-    # otherwise a 1-second wave just looks like a solid block of color.
-    zoom_samples = int(sr_fm * 0.025) 
-    librosa.display.waveshow(sine_wave[:zoom_samples], sr=sr_fm, ax=ax_fm, color="#00CED1")
-
-    ax_fm.set_title(f"Sine Waveform: {f}Hz (Zoomed to first 25ms)", fontsize=13, fontweight='bold', color='#0077BE', pad=16)
-    ax_fm.set_ylabel("Amplitude", fontsize=11, fontweight='600', color='#555')
-    ax_fm.grid(True, alpha=0.2, linestyle='--', color='#0077BE')
+    # FM
+    phase_modulation = fm_depth * np.sin(2 * np.pi * fm * t)
+    modulated_wave = np.sin(2 * np.pi * fc * t + phase_modulation)
+    # AM
+    amplitude_envelope = 1.0 - am_depth * (0.5 - 0.5 * np.cos(2 * np.pi * fm * t))
+    modulated_wave = modulated_wave * amplitude_envelope
+    # 2. Plot using Librosa waveshow
+    figfm, (ax_fm, ax_spec) = plt.subplots(nrows=2, ncols=1, figsize=(10, 7.5))
     figfm.patch.set_facecolor('#F0F8FF')
+
+    # Zoom window extended to 60ms to show the modulation patterns
+    zoom_samples = int(sr_fm * 0.060) 
+    librosa.display.waveshow(modulated_wave[:zoom_samples], sr=sr_fm, ax=ax_fm, color="#00CED1")
+
+    # If AM modulation is active, trace the tracking envelope onto the chart
+    if am_depth > 0.0:
+        t_zoom = t[:zoom_samples]
+        env_zoom = amplitude_envelope[:zoom_samples]
+        ax_fm.plot(t_zoom, env_zoom, color="#FF8C00", linestyle=":", lw=2, alpha=0.8, label="AM Boundary")
+        ax_fm.plot(t_zoom, -env_zoom, color="#FF8C00", linestyle=":", lw=2, alpha=0.8)
+        ax_fm.legend(loc="upper right")
+
+    ax_fm.set_title(f"Modulated Waveform (Zoomed to first 60ms)", fontsize=13, fontweight='bold', color='#0077BE', pad=16)
+    ax_fm.set_ylabel("Amplitude", fontsize=11, fontweight='600', color='#555')
+    ax_fm.set_xlabel("Time (seconds)", fontsize=11, fontweight='600', color='#555')
+    ax_fm.grid(True, alpha=0.2, linestyle='--', color='#0077BE')
+
+    # Spectrogram
+    hop_len = 128
+    stft_matrix = librosa.stft(modulated_wave, n_fft=1024, hop_length=hop_len)
+    S_fm = librosa.amplitude_to_db(np.abs(stft_matrix), ref=np.max)
+
+    img_fm = librosa.display.specshow(
+        S_fm, 
+        sr=sr_fm, 
+        hop_length=hop_len,
+        x_axis='time', 
+        y_axis='log', 
+        ax=ax_spec, 
+        cmap='viridis'
+    )
+
+    ax_spec.set_xlim(0, 0.060)
+        # Focus the log-scale view specifically on the active audio bands (20Hz - 2000Hz)
+    ax_spec.set_ylim(200, 20000) 
+
+    ax_spec.set_title("Spectrogram", fontsize=13, fontweight='bold', color='#0077BE', pad=12)
+    ax_spec.set_xlabel("Time (seconds)", fontsize=11, fontweight='600', color='#555')
+    ax_spec.set_ylabel("Frequency (Hz)", fontsize=11, fontweight='600', color='#555')
+    ax_spec.set_facecolor('#F0F8FF')
     plt.tight_layout()
 
     # 3. Combine the audio player and the plot into the UI
     mo.vstack([
         mo.md("<div style='background: #E8F4F8; padding: 12px 16px; border-radius: 6px; margin-bottom: 16px;'><strong style='color: #0077BE; font-size: 1rem;'>▶ Listen to the waveform below:</strong></div>"),
-        mo.center(mo.audio(sine_wave, rate=sr_fm)),
+        mo.center(mo.audio(modulated_wave, rate=sr_fm)),
         figfm
     ])
     return
@@ -183,10 +297,8 @@ def _():
     df_plot = df_numeric.filter(pl.col("mz_ratio").is_not_null())
     df_plot = df_plot.with_columns([pl.col(c).cast(pl.Float64) for c in sample_cols])
     df_plot = df_plot.rename(sample_names)
-    df_plot
 
     df_coffee = pl.read_csv('Dataset Arabica and Robusta coffee BARDS curves.csv')
-    df_coffee
     return df1, df_coffee, df_plot, sample_options
 
 
@@ -261,6 +373,27 @@ def _(sample_options):
     )
 
 
+@app.function(hide_code=True)
+## Envelope
+def create_adsr_envelope(duration, sr, a, d, s, r):
+    total_samples = int(duration * sr)
+    a_samples = int(a * sr)
+    d_samples = int(d * sr)
+    r_samples = int(r * sr)
+    s_samples = total_samples - (a_samples + d_samples + r_samples)
+
+    if s_samples < 0:
+        return np.zeros(total_samples) # Safety check
+
+    envelope = np.concatenate([
+        np.linspace(0, 1, a_samples),
+        np.linspace(1, s, d_samples),
+        np.full(s_samples, s),
+        np.linspace(s, 0, r_samples)
+    ])
+    return envelope
+
+
 @app.cell(hide_code=True)
 def _(
     adsr_group,
@@ -314,27 +447,6 @@ def _(
     return
 
 
-@app.function(hide_code=True)
-## Envelope
-def create_adsr_envelope(duration, sr, a, d, s, r):
-    total_samples = int(duration * sr)
-    a_samples = int(a * sr)
-    d_samples = int(d * sr)
-    r_samples = int(r * sr)
-    s_samples = total_samples - (a_samples + d_samples + r_samples)
-
-    if s_samples < 0:
-        return np.zeros(total_samples) # Safety check
-
-    envelope = np.concatenate([
-        np.linspace(0, 1, a_samples),
-        np.linspace(1, s, d_samples),
-        np.full(s_samples, s),
-        np.linspace(s, 0, r_samples)
-    ])
-    return envelope
-
-
 @app.cell(hide_code=True)
 def _(
     attack,
@@ -382,7 +494,7 @@ def _(
     # Source spectrum
     ax[0].fill_between(wavelengths, smoothed, alpha=0.3, color='#8B4513')
     ax[0].plot(wavelengths, smoothed, color='#8B4513', linewidth=2.5)
-    ax[0].set_title("☕ Coffee Spectrum (The Source)", fontsize=13, fontweight='bold', color='#8B4513', pad=12)
+    ax[0].set_title("Coffee Spectrum (SG smoothed)", fontsize=13, fontweight='bold', color='#8B4513', pad=12)
     ax[0].set_ylabel("Intensity", fontsize=11, fontweight='600', color='#555')
     ax[0].grid(True, alpha=0.2, linestyle='--')
     ax[0].set_facecolor('#FFF8F0')
@@ -390,7 +502,7 @@ def _(
     # ADSR envelope
     ax[1].fill_between(np.linspace(0, duration, len(envelope)), envelope, alpha=0.4, color='#DC143C')
     ax[1].plot(np.linspace(0, duration, len(envelope)), envelope, color='#DC143C', linewidth=2.5)
-    ax[1].set_title("📈 ADSR Envelope (Applied)", fontsize=13, fontweight='bold', color='#DC143C', pad=12)
+    ax[1].set_title("ADSR Envelope (Applied)", fontsize=13, fontweight='bold', color='#DC143C', pad=12)
     ax[1].set_ylabel("Amplitude", fontsize=11, fontweight='600', color='#555')
     ax[1].grid(True, alpha=0.2, linestyle='--')
     ax[1].set_facecolor('#FFE4E1')
@@ -398,7 +510,7 @@ def _(
     # Spectrogram
     S = librosa.amplitude_to_db(np.abs(librosa.stft(final_audio)), ref=np.max)
     img = librosa.display.specshow(S, sr=sr, x_axis='time', y_axis='log', ax=ax[2], cmap='viridis')
-    ax[2].set_title("🎼 Harmonic Fingerprint (The Sound)", fontsize=13, fontweight='bold', color='#0077BE', pad=12)
+    ax[2].set_title("Spectogram", fontsize=13, fontweight='bold', color='#0077BE', pad=12)
     ax[2].set_facecolor('#F0F8FF')
     fig.patch.set_facecolor('#FFFFFF')
     plt.tight_layout()
